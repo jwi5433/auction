@@ -1,4 +1,4 @@
-import { postRouter } from "auction/server/api/routers/post";
+import { auctionRouter } from "auction/server/api/routers/auction";
 import { createCallerFactory, createTRPCRouter } from "auction/server/api/trpc";
 
 /**
@@ -7,7 +7,7 @@ import { createCallerFactory, createTRPCRouter } from "auction/server/api/trpc";
  * All routers added in /api/routers should be manually added here.
  */
 export const appRouter = createTRPCRouter({
-  post: postRouter,
+  auction: auctionRouter,
 });
 
 // export type definition of API
